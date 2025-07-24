@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container">
+         <h1>Calculadora</h1>
+    
+         <input class="input1" type="text" id="valor1"  placeholder="Digite o 1º número">
+         <input class="input2" type="text" id="valor2" placeholder="Digite o 2º número">
+
+        <select name="" id="operacao">
+             <option value="soma">+</option>
+             <option value="subtracao">-</option>
+             <option value="multiplicacao">*</option>
+             <option value="divisao">/</option>
+        </select>
+
+        <div class="containerBtn">
+             <button onclick="calcular()">Calcular</button>
+        </div>
+       
+
+         <div class="btnResultado" id="resultado"></div>
+    </div>
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>
