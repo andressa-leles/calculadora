@@ -4,6 +4,11 @@ function calcular(){
 
    let resultado = ""
 
+    if (isNaN(valor1) || isNaN(valor2)) {
+        document.getElementById('resultado').innerText = "Por favor, preencha os dois números corretamente.";
+        return;
+    }
+
    function soma(valor1, valor2){
         return valor1 + valor2
 
@@ -19,6 +24,9 @@ function calcular(){
    }
 
    function divisao(valor1, valor2){
+        if (valor2 === 0) {
+        return "Erro: divisão por zero";
+    }
         return valor1 / valor2
    }
 
